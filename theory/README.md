@@ -9,8 +9,6 @@ both `antelope` and `antelopes`.)
 
     antelope rocks out
     antelopes rock out
-    
-    Answer: antelopes? rocks? out
 
 * Regex that matches either of:
 
@@ -21,8 +19,6 @@ both `antelope` and `antelopes`.)
 
     boat
 
-  Answer: goat|moat
-
 * Regex that matches dates in YYYY-MM-DD format. (Year can be 1-4 digits, and
   month and day can each be 1-2 digits). This does not need to verify the date
   is correct (e.g 33333-33-33 can match).
@@ -31,8 +27,6 @@ both `antelope` and `antelopes`.)
   1999-1-20
   1999-01-20
   812-2-10
-
-  Answer: \d\d?\d?\d?-\d\d?-\d\d?
 
 ## State Machines
 
@@ -46,13 +40,9 @@ both `antelope` and `antelopes`.)
   Remember the ε transition can be used to move between states without
   consuming input. 
 
-  Answer: Please refer to the attached picture "stateMachineDiagram1.png"
-
 * A lion can be sleeping, eating, hunting, or preening. Draw a state
   machine diagram for the lion and label the transition events that
   cause state transitions.
-
-  Answer: Please refer to the attached picture "stateMachineDiagram2.png"
 
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
@@ -72,14 +62,8 @@ both `antelope` and `antelopes`.)
     bold sequence need only accept `1` (and is a trivial regex). (ESC is
     a single character which can be represented with `\e` in the regex.)
 
-  Answer: 
-  \e\[\d+;\d+f
-  \e\[\dm 
-
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
-
-    Answer: Please refer to the attached picture "stateMachineDiagram3.png"
 
 > If you're curious, [here are all the VT-100 escape
 > sequences](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
